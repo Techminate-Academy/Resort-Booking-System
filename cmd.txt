@@ -1,0 +1,19 @@
+php artisan serve
+php artisan optimize
+
+php artisan migrate
+php artisan make:model Room -m
+php artisan make:controller RoomController
+
+
+
+C create  - POST
+R read    - GET 
+U update  - POST (PUT / PATCH) 
+D delete  - POST (DELETE)
+
+
+///////////// GIT HUB ////////////
+
+
+git init - for the first time
