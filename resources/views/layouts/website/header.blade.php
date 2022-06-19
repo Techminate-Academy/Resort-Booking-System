@@ -3,11 +3,12 @@
 <head>
 <meta charset="utf-8">
 <title>Hotera - Hotel and Restaurant HTML Template | Beach Hotel</title>
+<!-- <link href="{{ asset('file path') }}" rel="stylesheet"> -->
 <!-- Stylesheets -->
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+<link href="{{ asset('website/css/bootstrap.css') }}" rel="stylesheet">
+<link href="{{ asset('website/css/style.css') }}" rel="stylesheet">
 <!-- Responsive File -->
-<link href="css/responsive.css" rel="stylesheet">
+<link href="{{ asset('website/css/responsive.css') }}" rel="stylesheet">
 
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
