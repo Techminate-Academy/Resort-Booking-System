@@ -46,7 +46,7 @@
                     </a>
                     <ul class="nav-main-submenu">
                         <li class="nav-main-item">
-                          <a class="nav-main-link" href="#">
+                          <a class="nav-main-link" href="{{ route('roomList') }}">
                               <span class="nav-main-link-name">Room List</span>
                           </a>
                         </li>
