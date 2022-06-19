@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\RoomController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +19,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Auth::routes();
+Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/roomList', [App\Http\Controllers\RoomController::class, 'roomList'])->name('roomList');
+Route::get('/roomList', [RoomController::class, 'roomList'])->name('roomList');
