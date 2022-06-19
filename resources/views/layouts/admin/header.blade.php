@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-        <title>M R Medicine Corner</title>
+        <title>Booking System</title>
         
         <meta name="description" content="Pharmatech is a pharmacy management system developed by sazid ahmed">
         <meta name="author" content="sazid ahmed">

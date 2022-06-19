@@ -94,16 +94,17 @@
 </div>
 <!--End pagewrapper--><!--Scroll to top--><div class="scroll-to-top scroll-to-target" data-target="html"><span class="flaticon-up-arrow"></span></div>
 
-<script src="js/jquery.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/jquery.fancybox.js"></script>
-<script src="js/owl.js"></script>
-<script src="js/scrollbar.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/custom-script.js"></script>
+<!-- <link href="{{ asset('file path') }}" rel="stylesheet"> -->
+<script src="{{ asset('website/js/jquery.js') }}"></script>
+<script src="{{ asset('website/js/popper.min.js') }}"></script>
+<script src="{{ asset('website/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('website/js/jquery-ui.js') }}"></script>
+<script src="{{ asset('website/js/jquery.fancybox.js') }}"></script>
+<script src="{{ asset('website/js/owl.js') }}"></script>
+<script src="{{ asset('website/js/scrollbar.js') }}"></script>
+<script src="{{ asset('website/js/appear.js') }}"></script>
+<script src="{{ asset('website/js/wow.js') }}"></script>
+<script src="{{ asset('website/js/custom-script.js') }}"></script>
 
 </body>
 </html>
