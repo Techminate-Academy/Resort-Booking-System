@@ -25,3 +25,4 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::get('/roomList', [RoomController::class, 'roomList'])->name('roomList');
+Route::get('/userList', [RoomController::class, 'userList'])->name('userList');
