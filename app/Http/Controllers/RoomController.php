@@ -9,4 +9,9 @@ class RoomController extends Controller
     {
         return view('admin.room.list');
     }
+    public function userList()
+    {
+        return view('admin.user.list');
+    }
 }
+
