@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\RoomController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,5 +24,11 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
+//rooms
 Route::get('/roomList', [RoomController::class, 'roomList'])->name('roomList');
-Route::get('/userList', [RoomController::class, 'userList'])->name('userList');
+Route::get('/roomGetById/{id}', [RoomController::class, 'roomGetById'])->name('roomGetById');
+Route::post('/roomCreate', [RoomController::class, 'roomCreate'])->name('roomCreate');
+Route::put('/roomUpdate/{id}', [RoomController::class, 'roomUpdate'])->name('roomUpdate');
+Route::delete('/roomDelete/{id}', [RoomController::class, 'roomDelete'])->name('roomDelete');
+
+Route::get('/userList', [UserController::class, 'userList'])->name('userList');
