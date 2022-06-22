@@ -23,12 +23,12 @@ class RoomController extends Controller
    
     public function roomCreate(Request $request)
     {
+        
         $this->validate($request,[
             'room_number'=>'required',
             'price'=>'required|numeric',
-            'description'=>'required|min:3'
         ]);
-
+        
         if($request->hasFile('image')){
             $this->validate($request,[
                 'image'=>'required|mimes:jpeg,jpg,png'
@@ -41,14 +41,15 @@ class RoomController extends Controller
         }
         
         $success = Room::create([
-            'room_number'=>$request->name,
+            'room_number'=>$request->room_number,
             'bed_type'=>$request->bed_type,
             'description'=>$request->description,
             'price'=>$request->price,
             'image'=>$img
         ]);
+        // dd($success);
         if($success){
-            return response()->json($this->roomList());
+            return $this->roomList();
         }
 
     }

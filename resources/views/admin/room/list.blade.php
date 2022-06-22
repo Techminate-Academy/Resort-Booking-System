@@ -45,19 +45,21 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($rooms as $key=> $room)
                         <tr>
                             <td class="text-center font-size-sm"><strong>1</strong></td>
-                            <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">Image</td>
-                            <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">A2460</td>
-                            <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">Single</td>
-                            <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">2500.00</td>
-                            <td class="d-none d-xl-table-cell font-size-sm">No Description</td>
+                            <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted"><img src="room/{{$room->image}}"  height="60"></td>
+                            <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">{{ $room->room_number }}</td>
+                            <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">{{ $room->bed_type }}</td>
+                            <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">{{ $room->price }}</td>
+                            <td class="d-none d-xl-table-cell font-size-sm">{{ $room->description }}</td>
                             <td class="">
                                 <a href="" data-toggle="modal" data-target="#modal-block-normal"><i class="fa fa-fw fa-eye text-success"></i></a>
                                 <a href="" data-toggle="modal" data-target="#modal-block-edit"><i class="fa fa-fw fa-pencil-alt text-primary"></i></a>
                                 <a href="" data-toggle="modal" data-target="#modal-block-delete"><i class="fa fa-fw fa-trash-alt text-danger"></i></a>
                             </td>
                         </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -151,7 +153,7 @@
                         </button>
                     </div>
                 </div>
-                <form action="" method="post" enctype="multipart/form-data">@csrf
+                <form action="{{route('roomCreate')}}" method="post" enctype="multipart/form-data">@csrf
                     <div class="block-content font-size-sm">
                         <div class="form-group">
                             <label for="example-text-input-alt">Room Number</label>
@@ -160,9 +162,9 @@
                         <div class="form-group">
                             <label>Bed Type</label>
                             <select class="form-control is-valid" name="bed_type">
-                                <option value="">Bed type select here ...</option>
-                                <option value="single">Single</option>
-                                <option value="single">Double</option>
+                                <option value="">Select here ...</option>
+                                <option value="Single">Single</option>
+                                <option value="Double">Double</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -175,7 +177,7 @@
                         </div>
                         <div class="form-group">
                             <label for="example-text-input-alt">Image</label>
-                            <input type="file" class="form-control is-valid" id="example-text-input-alt" name="image" placeholder="Image here...">
+                            <input type="file" name="image" accept="image/*" class="form-control is-valid" id="example-text-input-alt" placeholder="Image here...">
                         </div>
                     </div>
                     <div class="block-content block-content-full text-right border-top">
