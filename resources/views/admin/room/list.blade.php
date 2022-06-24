@@ -47,7 +47,7 @@
                     <tbody>
                         @foreach($rooms as $key=> $room)
                         <tr>
-                            <td class="text-center font-size-sm"><strong>1</strong></td>
+                            <td class="text-center font-size-sm"><strong>{{ $key+1}}</strong></td>
                             <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted"><img src="room/{{$room->image}}"  height="60"></td>
                             <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">{{ $room->room_number }}</td>
                             <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">{{ $room->bed_type }}</td>

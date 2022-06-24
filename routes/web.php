@@ -25,7 +25,9 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 //rooms
+Route::get('/roomPage', [RoomController::class, 'roomPage'])->name('roomPage');
 Route::get('/roomList', [RoomController::class, 'roomList'])->name('roomList');
+
 Route::get('/roomGetById/{id}', [RoomController::class, 'roomGetById'])->name('roomGetById');
 Route::post('/roomCreate', [RoomController::class, 'roomCreate'])->name('roomCreate');
 Route::put('/roomUpdate/{id}', [RoomController::class, 'roomUpdate'])->name('roomUpdate');

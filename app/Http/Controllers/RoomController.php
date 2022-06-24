@@ -8,6 +8,13 @@ use App\Models\Room;
 
 class RoomController extends Controller
 {
+
+    public function roomPage()
+    {
+        $rooms = Room::latest()->paginate(10);
+        return view('website.room', compact('rooms'));
+    }
+
     public function roomList()
     {
         $rooms = Room::latest()->paginate(10);
@@ -20,7 +27,6 @@ class RoomController extends Controller
         return Room::find($id);
     }
 
-   
     public function roomCreate(Request $request)
     {
         
