@@ -15,6 +15,12 @@ class RoomController extends Controller
         return view('website.room', compact('rooms'));
     }
 
+    public function roomDetails($id)
+    {
+        $room = Room::find($id);
+        return view('website.roomDetails', compact('room'));
+    }
+
     public function roomList()
     {
         $rooms = Room::latest()->paginate(10);
@@ -31,6 +37,7 @@ class RoomController extends Controller
     {
         
         $this->validate($request,[
+            'room_title'=>'required',
             'room_number'=>'required',
             'price'=>'required|numeric',
         ]);
@@ -47,6 +54,7 @@ class RoomController extends Controller
         }
         
         $success = Room::create([
+            'room_title'=>$request->room_title,
             'room_number'=>$request->room_number,
             'bed_type'=>$request->bed_type,
             'description'=>$request->description,

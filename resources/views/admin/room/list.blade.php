@@ -38,6 +38,7 @@
                             <th class="text-center" style="width: 120px;">Index</th>
                             <th class="d-none d-xl-table-cell">Image</th>
                             <th class="d-none d-sm-table-cell">Room No.</th>
+                            <th class="d-none d-sm-table-cell">Room Title</th>
                             <th class="d-none d-sm-table-cell">Bed type</th>
                             <th class="d-none d-sm-table-cell">Price</th>
                             <th class="d-none d-sm-table-cell">Description</th>
@@ -50,6 +51,7 @@
                             <td class="text-center font-size-sm"><strong>{{ $key+1}}</strong></td>
                             <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted"><img src="room/{{$room->image}}"  height="60"></td>
                             <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">{{ $room->room_number }}</td>
+                            <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">{{ $room->room_title }}</td>
                             <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">{{ $room->bed_type }}</td>
                             <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">{{ $room->price }}</td>
                             <td class="d-none d-xl-table-cell font-size-sm">{{ $room->description }}</td>
@@ -155,6 +157,10 @@
                 </div>
                 <form action="{{route('roomCreate')}}" method="post" enctype="multipart/form-data">@csrf
                     <div class="block-content font-size-sm">
+                    <div class="form-group">
+                            <label for="example-text-input-alt">Room Title</label>
+                            <input type="text" class="form-control is-valid" id="example-text-input-alt" name="room_title" placeholder="Room title here ...">
+                        </div>
                         <div class="form-group">
                             <label for="example-text-input-alt">Room Number</label>
                             <input type="text" class="form-control is-valid" id="example-text-input-alt" name="room_number" placeholder="Room number here ...">
