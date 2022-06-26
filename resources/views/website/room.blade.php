@@ -10,7 +10,7 @@
         <div class="banner-inner">
             <div class="auto-container">
                 <div class="inner-container clearfix">
-                    <h1>Rooms</h1>
+                    <h1>Room Grid</h1>
                 </div>
             </div>
         </div>
