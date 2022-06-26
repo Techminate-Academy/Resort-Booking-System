@@ -2,21 +2,6 @@
 
 @section('content')
 
- <!-- Banner Section -->
- <section class="page-banner">
-        <div class="image-layer" style="background-image:url(images/background/banner-image-2.jpg);"></div>
-        <div class="banner-bottom-pattern"></div>
-
-        <div class="banner-inner">
-            <div class="auto-container">
-                <div class="inner-container clearfix">
-                    <h1>Room Grid</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Banner Section -->
-
     <!--Rooms Section-->
     <section class="rooms-section">
         <div class="auto-container">

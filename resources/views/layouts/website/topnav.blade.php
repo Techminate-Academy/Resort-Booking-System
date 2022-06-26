@@ -33,13 +33,12 @@
 
                 <div class="other-links clearfix">
                     <div class="info">
-                        <ul class="clearfix">
-                            <li><a href="{{ route('login') }}"><span class="icon flaticon-padlock"></span><span class="txt">Login</span></a></li>
-                            <li><a href="{{ route('register') }}"><span class="icon flaticon-padlock"></span><span class="txt">Register</span></a></li>
-                        </ul>
+                       
                     </div>
                     <div class="link-box">
-                        <a href="#" class="theme-btn btn-style-one"><span class="btn-title">Your Bookings</span></a>
+                        <a href="{{ route('login') }}" class="btn btn-outline btn-sm mb-5"><b>Login</b></a>
+                        <a href="{{ route('register') }}" class="btn btn-outline btn-sm mb-5"><b>Register</b></a>
+                        <a href="#" class="theme-btn btn-style-one"><span class="btn-title">My Bookings</span></a>
                     </div>
                 </div>
 
