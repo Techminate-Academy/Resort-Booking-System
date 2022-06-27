@@ -18,11 +18,10 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('room_id');
             $table->string('phone');
+            $table->string('address');
             $table->string('booking_number');
             $table->string('from_date');
             $table->string('to_date');
-            $table->float('price', 8, 2);
-            $table->float('discount', 8, 2)->nullable();
             $table->float('total', 8, 2)->nullable();
             $table->string('payment_method');
             $table->string('status');
