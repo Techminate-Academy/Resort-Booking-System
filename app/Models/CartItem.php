@@ -5,12 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Room extends Model
+class CartItem extends Model
 {
     use HasFactory;
+
     protected $guarded=[];
 
-    public function cartItem(){
-    	return $this->hasOne(CartItem::class);
+    public function cart(){
+    	return $this->belongsTo(Cart::class);
+    }
+
+    public function room(){
+    	return $this->belongsTo(Room::class);
     }
 }

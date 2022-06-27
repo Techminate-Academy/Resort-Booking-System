@@ -1,9 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\BookingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +29,8 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 //rooms
 Route::get('/rooms', [RoomController::class, 'roomPage'])->name('rooms');
 Route::get('/roomDetails/{id}', [RoomController::class, 'roomDetails'])->name('roomDetails');
+Route::get('/checkout/{id}', [BookingController::class, 'checkout'])->name('checkout');
+
 
 Route::get('/roomList', [RoomController::class, 'roomList'])->name('roomList');
 Route::get('/roomGetById/{id}', [RoomController::class, 'roomGetById'])->name('roomGetById');

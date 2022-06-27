@@ -38,7 +38,7 @@
                                 <p><b>Bed Type : </b> {{ $room->bed_type }}</p>
                             </div>
                             <div>
-                            <a href="{{ route('roomDetails',[$room->id]) }}" class="theme-btn btn-style-three"><span class="btn-title">Book Now</span></a>
+                                <a href="{{ route('checkout',[$room->id]) }}" class="theme-btn btn-style-three"><span class="btn-title">Book Now</span></a>
                             </div>
                         </div>
                         <div class="col">
