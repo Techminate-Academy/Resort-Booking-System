@@ -10,7 +10,4 @@ class Room extends Model
     use HasFactory;
     protected $guarded=[];
 
-    public function cartItem(){
-    	return $this->hasOne(CartItem::class);
-    }
 }

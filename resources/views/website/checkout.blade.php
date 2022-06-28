@@ -11,12 +11,12 @@
                     <div class="form-box default-form contact-form-two wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <h3>Checkout </h3>
 
-                        <form method="POST" action="{{ route('login') }}">@csrf
+                        <form method="POST" action="{{ route('confirmbooking') }}">@csrf
                            <div class="row">
                                 <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Booking From</label>
-                                        <input type="date" name="to_date" placeholder="Select To date" required="" class="form-control" id="exampleFormControlInput1">
+                                        <input type="date" name="from_date" placeholder="Select To date" required="" class="form-control" id="exampleFormControlInput1">
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Your Name</label>
@@ -24,7 +24,7 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Your Email</label>
-                                        <input type="text" name="name" value="{{$user->email}}" class="form-control" id="exampleFormControlInput1" disabled>
+                                        <input type="text" name="email" value="{{$user->email}}" class="form-control" id="exampleFormControlInput1" disabled>
                                     </div>
                                 </div>
                                 <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
@@ -40,6 +40,8 @@
                                         <label for="exampleFormControlInput1" class="form-label">Enter Your Address</label>
                                         <input type="text" name="address" class="form-control" id="exampleFormControlInput1">
                                     </div>
+                                    <input type="hidden" name="user_id" value="{{$user->id}}">
+                                    <input type="hidden" name="room_id" value="{{$room->id}}">
                                 </div>
                                 <div class="col">
                                     <div class="card" style="width: 18rem;">
@@ -56,13 +58,13 @@
                                         <div class="mb-3">
                                             <label class="form-label text-dark">Payment Method</label>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                <input class="form-check-input" type="radio" name="payment_method" id="exampleRadios1" value="Cash" checked>
                                                 <label class="form-check-label text-dark" for="exampleRadios1">
                                                     Cash
                                                 </label>
                                                 </div>
                                                 <div class="form-check text-dark">
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                <input class="form-check-input" type="radio" name="payment_method" id="exampleRadios2" value="Bkash">
                                                 <label class="form-check-label" for="exampleRadios2">
                                                     Bkash
                                                 </label>

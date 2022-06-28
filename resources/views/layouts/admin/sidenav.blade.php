@@ -55,11 +55,6 @@
                               <span class="nav-main-link-name">Booking list</span>
                           </a>
                         </li>
-                        <li class="nav-main-item">
-                            <a class="nav-main-link" href="#">
-                                <span class="nav-main-link-name">Available for booking</span>
-                            </a>
-                        </li>
                     </ul>
                 </li>
 

@@ -30,7 +30,8 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/rooms', [RoomController::class, 'roomPage'])->name('rooms');
 Route::get('/roomDetails/{id}', [RoomController::class, 'roomDetails'])->name('roomDetails');
 Route::get('/checkout/{id}', [BookingController::class, 'checkout'])->name('checkout');
-
+Route::post('/confirmbooking', [BookingController::class, 'confirmbooking'])->name('confirmbooking');
+Route::get('/showBookings', [BookingController::class, 'showBookings'])->name('showBookings');
 
 Route::get('/roomList', [RoomController::class, 'roomList'])->name('roomList');
 Route::get('/roomGetById/{id}', [RoomController::class, 'roomGetById'])->name('roomGetById');
