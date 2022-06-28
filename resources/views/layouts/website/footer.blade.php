@@ -38,9 +38,9 @@
                                             <h4>Contact</h4>
                                         </div>
                                         <ul class="info">
-                                            <li class="address">Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</li>
-                                            <li class="phone"><a href="tel:+2(305)587-3407">+2(305) 587-3407</a></li>
-                                            <li class="email"><a href="mailto:info@hotera.com">info@hotera.com</a></li>
+                                            <li class="address">Uttara, Dhaka, Bangladesh</li>
+                                            <li class="phone"><a href="tel:+2(305)587-3407">01770184332</a></li>
+                                            <li class="email"><a href="mailto:info@hotera.com">info@Resort.com</a></li>
                                             <li class="social-links">
                                                 <a href="#"><span class="fab fa-facebook-f"></span></a>
                                                 <a href="#"><span class="fab fa-twitter"></span></a>
@@ -81,7 +81,7 @@
         <div class="footer-bottom">
             <div class="auto-container">
                 <div class="inner clearfix">
-                    <div class="copyright">&copy; 2020 Hotera - All Right Reserved</div>
+                    <div class="copyright">&copy; 2022 - All Right Reserved</div>
                     <div class="bottom-links">
                         <a href="#">Terms of Service</a> &ensp;|&ensp; <a href="#">Privacy Policy</a>
                     </div>

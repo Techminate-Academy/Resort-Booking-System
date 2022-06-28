@@ -8,7 +8,7 @@
   <div class="banner-carousel owl-theme owl-carousel">
     <!-- Slide Item -->
     <div class="slide-item">
-      <div class="image-layer" style="background-image: url(images/main-slider/1.jpg);"></div>
+      <div class="image-layer" style="background-image: url({{ URL::asset('website/image/6.jpg') }})"></div>
       <div class="auto-container">
         <div class="content-box">
           <div class="content">
@@ -23,7 +23,7 @@
 
     <!-- Slide Item -->
     <div class="slide-item">
-      <div class="image-layer" style="background-image: url(images/main-slider/2.jpg);"></div>
+    <div class="image-layer" style="background-image: url({{ URL::asset('website/image/5.jpg') }})"></div>
       <div class="auto-container">
         <div class="content-box">
           <div class="content">
@@ -38,7 +38,7 @@
 
     <!-- Slide Item -->
     <div class="slide-item">
-      <div class="image-layer" style="background-image: url(images/main-slider/3.jpg);"></div>
+    <div class="image-layer" style="background-image: url({{ URL::asset('website/image/3.jpg') }})"></div>
       <div class="auto-container">
         <div class="content-box">
           <div class="content">
