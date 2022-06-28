@@ -30,7 +30,6 @@
                             <th class="text-center" style="width: 120px;">Index</th>
                             <th class="d-none d-sm-table-cell">Booking Number</th>
                             <th class="d-none d-sm-table-cell">Room No.</th>
-                            <th class="d-none d-sm-table-cell">Bed type</th>
                             <th class="d-none d-sm-table-cell">From Date</th>
                             <th class="d-none d-sm-table-cell">To Date</th>
                             <th class="d-none d-sm-table-cell">Total</th>
@@ -43,7 +42,6 @@
                         <tr>
                             <td class="text-center font-size-sm"><strong>{{ $key+1}}</strong></td>
                             <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">{{ $room->booking_number }}</td>
-                            <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">{{ $room->room_id }}</td>
                             <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">{{ $room->room_id }}</td>
                             <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">{{ $room->from_date }}</td>
                             <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">{{ $room->to_date }}</td>
