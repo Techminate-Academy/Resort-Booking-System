@@ -22,6 +22,12 @@ class BookingController extends Controller
         }
     }
 
+    public function showBookings(){
+        $user = Auth::user();
+        $bookings_of_user = Booking::where('user_id',$user->id)->get();
+        return view('admin.user.showBookings', compact('bookings_of_user'));
+    }
+
     public function confirmbooking(Request $request){
         // dd($request);
         $room = Room::find($request->room_id);
@@ -41,14 +47,8 @@ class BookingController extends Controller
         ]);
 
         if($success){
-            return view('website.room');
+            return $this->showBookings();
         }
 
-    }
-
-    public function showBookings(){
-        $user = Auth::user();
-        $bookings_of_user = Booking::where('user_id',$user->id)->get();
-        return view('admin.user.showBookings', compact('bookings_of_user'));
     }
 }

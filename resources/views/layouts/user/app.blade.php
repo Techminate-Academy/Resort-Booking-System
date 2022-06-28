@@ -1,8 +1,7 @@
+@include('layouts.user.header')
+@include('layouts.user.sidenav')
 
-@include('layouts.admin.header')
-@include('layouts.admin.sidenav')
-
-@include('layouts.admin.topnav')
+@include('layouts.user.topnav')
 
 <!-- Main Container -->
 <main id="main-container">
@@ -12,5 +11,4 @@
 </main>
 <!-- END Main Container -->
 
-@include('layouts.admin.footer')
-
+@include('layouts.user.footer')

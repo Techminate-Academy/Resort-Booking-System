@@ -1,4 +1,4 @@
-@extends('layouts.admin.app')
+@extends('layouts.user.app')
 
 @section('content')
 <div id="delete-category">
@@ -17,10 +17,7 @@
 <div class="content">
     <div class="block block-rounded">
         <div class="block-header block-header-default">
-            <h3 class="block-title">Room List</h3>
-            <div class="block-options">
-                <button type="button" class="btn btn-success btn-square mr-1 mb-3" data-toggle="modal" data-target="#modal-block-create"><i class="fa fa-fw fa-plus-circle mr-1"></i> New</button>
-            </div>
+            <h3 class="block-title">Booking List</h3>
         </div>
         <div class="block-content">
             <div class="table-responsive">
