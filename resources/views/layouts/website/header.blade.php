@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Hotera - Hotel and Restaurant HTML Template | Beach Hotel</title>
+<title>Index | Resort Booking System</title>
 <!-- <link href="{{ asset('file path') }}" rel="stylesheet"> -->
 <!-- Stylesheets -->
 <link href="{{ asset('website/css/bootstrap.css') }}" rel="stylesheet">

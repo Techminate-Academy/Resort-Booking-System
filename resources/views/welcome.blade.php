@@ -13,8 +13,8 @@
         <div class="content-box">
           <div class="content">
             <div class="inner">
-              <h1>Coolest Beach <br>Hotels in the USA</h1>
-              <div class="text">Amet consectetur adipisicing elit sed do eiusmod tempor incididunt adipisicing</div>
+              <h1>Coolest Resort<br>For spend your holiday</h1>
+              <div class="text">Growth made easy through insights, efficiencies, and exposure.</div>
             </div>
           </div>
         </div>
@@ -28,8 +28,8 @@
         <div class="content-box">
           <div class="content">
             <div class="inner">
-              <h1>Coolest Beach <br>Hotels in the USA</h1>
-              <div class="text">Amet consectetur adipisicing elit sed do eiusmod tempor incididunt adipisicing</div>
+              <h1>Coolest Resort<br>For spend your holiday</h1>
+              <div class="text">Growth made easy through insights, efficiencies, and exposure.</div>
             </div>
           </div>
         </div>
@@ -43,8 +43,8 @@
         <div class="content-box">
           <div class="content">
             <div class="inner">
-              <h1>Coolest Beach <br>Hotels in the USA</h1>
-              <div class="text">Amet consectetur adipisicing elit sed do eiusmod tempor incididunt adipisicing</div>
+              <h1>Coolest Resort<br>For spend holiday</h1>
+              <div class="text">Growth made easy through insights, efficiencies, and exposure.</div>
             </div>
           </div>
         </div>
