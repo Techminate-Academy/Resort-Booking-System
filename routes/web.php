@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\WebsiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,13 +27,16 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-//rooms
+//website
 Route::get('/rooms', [RoomController::class, 'roomPage'])->name('rooms');
 Route::get('/roomDetails/{id}', [RoomController::class, 'roomDetails'])->name('roomDetails');
 Route::get('/checkout/{id}', [BookingController::class, 'checkout'])->name('checkout');
 Route::post('/confirmbooking', [BookingController::class, 'confirmbooking'])->name('confirmbooking');
 Route::get('/showBookings', [BookingController::class, 'showBookings'])->name('showBookings');
+Route::get('/about', [WebsiteController::class, 'about'])->name('about');
+Route::get('/contact', [WebsiteController::class, 'contact'])->name('contact');
 
+//Adming portal
 Route::get('/roomList', [RoomController::class, 'roomList'])->name('roomList');
 Route::get('/roomGetById/{id}', [RoomController::class, 'roomGetById'])->name('roomGetById');
 Route::post('/roomCreate', [RoomController::class, 'roomCreate'])->name('roomCreate');

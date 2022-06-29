@@ -24,8 +24,8 @@
                                 </li>
                                 <li  class="dropdown"><a href="{{ route('rooms') }}">Rooms</a>
                                 </li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="{{ route('about') }}">About Us</a></li>
+                                <li><a href="{{ route('contact') }}">Contact</a></li>
                             </ul>
                         </div>
                     </nav>
