@@ -10,7 +10,7 @@
                 <div class="inner">
                     <div class="form-box default-form contact-form-two wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <h3>Login Here</h3>
-                        <form method="POST" action="{{ route('login') }}">@csrf
+                        <form method="POST" action="{{ route('loginUser') }}">@csrf
                             <div class="form-group">
                                 <div class="field-inner">
                                     <input type="text" name="email" placeholder="Your Email" required="">

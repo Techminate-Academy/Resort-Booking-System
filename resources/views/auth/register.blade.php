@@ -10,7 +10,7 @@
                 <div class="inner">
                     <div class="form-box default-form contact-form-two wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <h3>Register Here</h3>
-                        <form method="POST" action="{{ route('register') }}">@csrf
+                        <form method="POST" action="{{ route('registerNewUser') }}">@csrf
                             <div class="form-group">
                                 <div class="field-inner">
                                     <input type="text" name="name" placeholder="Your Name" required="">
@@ -46,6 +46,7 @@
                                     <input type="password" name="password_confirmation" placeholder="Confirm Password" required="">
                                 </div>
                             </div>
+                            <input type="hidden" name="is_admin" value="0" >
                             <div class="form-group">
                                 <button type="submit" class="theme-btn btn-style-one"><span class="btn-title">Sign Up</span></button>
                             </div>

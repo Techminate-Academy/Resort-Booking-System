@@ -35,8 +35,13 @@ Route::post('/confirmbooking', [BookingController::class, 'confirmbooking'])->na
 Route::get('/showBookings', [BookingController::class, 'showBookings'])->name('showBookings');
 Route::get('/about', [WebsiteController::class, 'about'])->name('about');
 Route::get('/contact', [WebsiteController::class, 'contact'])->name('contact');
+Route::get('/signIn', [WebsiteController::class, 'signIn'])->name('signIn');
+Route::get('/signUp', [WebsiteController::class, 'signUp'])->name('signUp');
+Route::post('/registerNewUser', [UserController::class, 'registerNewUser'])->name('registerNewUser');
+Route::post('/loginUser', [UserController::class, 'loginUser'])->name('loginUser');
 
-//Adming portal
+
+//admin panel
 Route::get('/roomList', [RoomController::class, 'roomList'])->name('roomList');
 Route::get('/roomGetById/{id}', [RoomController::class, 'roomGetById'])->name('roomGetById');
 Route::post('/roomCreate', [RoomController::class, 'roomCreate'])->name('roomCreate');

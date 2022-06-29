@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Http\Request;
 
 class WebsiteController extends Controller
 {
@@ -11,5 +10,13 @@ class WebsiteController extends Controller
 
     public function contact(){
         return view('website.contact');
+    }
+
+    public function signIn(){
+        return view('auth.login');
+    }
+
+    public function signUp(){
+        return view('auth.register');
     }
 }
