@@ -28,8 +28,8 @@
                                         <ul class="links">
                                             <li><a href="index.html">Home</a></li>
                                             <li><a href="rooms-grid.html">Our Rooms</a></li>
-                                            <li><a href="restaurant.html">Restaurant</a></li>
-                                            <li><a href="about.html">About Hotera</a></li>
+                                            <li><a href="restaurant.html">Resort</a></li>
+                                            <li><a href="about.html">About </a></li>
                                             <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </div>
