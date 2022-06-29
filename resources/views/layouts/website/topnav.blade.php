@@ -36,12 +36,18 @@
                        
                     </div>
                     <div class="link-box">
-                        <a href="{{ route('login') }}" class="btn btn-outline btn-sm mb-5"><b>Login</b></a>
-                        <a href="{{ route('register') }}" class="btn btn-outline btn-sm mb-5"><b>Register</b></a>
+                    @if (Route::has('login'))
+                        @auth
                         <a href="#" class="theme-btn btn-style-one"><span class="btn-title">My Bookings</span></a>
+                        @else
+                            <a href="{{ route('login') }}" class="btn btn-outline btn-sm mb-5"><b>Login</b></a>
+                            @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="btn btn-outline btn-sm mb-5"><b>Register</b></a>
+                            @endif
+                        @endauth
                     </div>
+                    @endif
                 </div>
-
             </div>
         </div>
         <!--End Header Upper-->
