@@ -38,22 +38,25 @@
                             <th class="text-center" style="width: 120px;">Index</th>
                             <th class="d-none d-xl-table-cell">Name</th>
                             <th class="d-none d-sm-table-cell">Email</th>
-                            <th class="d-none d-sm-table-cell">Password</th>
+                            <th class="d-none d-sm-table-cell">User Type</th>
                         </tr>
                     </thead>
                     <tbody>
+                    @foreach($users as $key=> $user)
                         <tr>
-                            <td class="text-center font-size-sm"><strong>1</strong></td>
-                            <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">User1</td>
-                            <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">user1@gmail.com</td>
-                            <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted"></td>
-                            <td class="">
-                                <a href="" data-toggle="modal" data-target="#modal-block-normal"><i class="fa fa-fw fa-eye text-success"></i></a>
-                                <a href="" data-toggle="modal" data-target="#modal-block-edit"><i class="fa fa-fw fa-pencil-alt text-primary"></i></a>
-                                <a href="" data-toggle="modal" data-target="#modal-block-delete"><i class="fa fa-fw fa-trash-alt text-danger"></i></a>
+                            <td class="text-center font-size-sm"><strong>{{$key+1}}</strong></td>
+                            <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">{{$user->name}}</td>
+                            <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">{{$user->email}}</td>
+                            <td class="d-none d-sm-table-cell font-size-sm font-w600 text-muted">
+                                @if($user->is_admin == '1')
+                                admin
+                                @else
+                                Customer
+                                @endif
                             </td>
                         </tr>
                     </tbody>
+                    @endforeach
                 </table>
             </div>
         </div>
@@ -84,39 +87,7 @@
         </div>
     </div>
 </div>
-<!-- -- edit modal -- -->
-<div class="modal" id="modal-block-edit" tabindex="-1" role="dialog" aria-labelledby="modal-block-normal" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="block block-rounded block-themed block-transparent mb-0">
-                <div class="block-header bg-primary-dark">
-                    <h3 class="block-title">Edit Information</h3>
-                    <div class="block-options">
-                        <button type="button" class="btn-block-option" data-dismiss="modal" aria-label="Close">
-                            <i class="fa fa-fw fa-times"></i>
-                        </button>
-                    </div>
-                </div>
-                <form action="" method="post" enctype="multipart/form-data">@csrf
-                    <div class="block-content font-size-sm">
-                        <div class="form-group">
-                            <label for="example-text-input-alt">Name</label>
-                            <input type="text" class="form-control is-valid" id="example-text-input-alt" name="Name" placeholder="User Name here ...">
-                        </div>
-                        <div class="form-group">
-                            <label for="example-text-input-alt">Email</label>
-                            <input type="text" class="form-control is-valid" id="example-text-input-alt" name="email" placeholder="User Email here ...">
-                        </div>
-                    </div>
-                    <div class="block-content block-content-full text-right border-top">
-                        <button type="button" class="btn btn-danger btn-square mb-1" data-dismiss="modal"><i class="fa fa-fw fa-plus-circle mr-1"></i> Cancel</button>
-                        <button type="submit" class="btn btn-success btn-square mb-1"><i class="fa fa-fw fa-check-circle mr-1"></i> submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- -- create modal -- -->
 <div class="modal" id="modal-block-create" tabindex="-1" role="dialog" aria-labelledby="modal-block-normal" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -130,7 +101,7 @@
                         </button>
                     </div>
                 </div>
-                <form action="" method="post" enctype="multipart/form-data">@csrf
+                <form action="{{ route('registerNewAdmin') }}" method="post" enctype="multipart/form-data">@csrf
                     <div class="block-content font-size-sm">
                         <div class="form-group">
                             <label for="example-text-input-alt">Name</label>
@@ -143,6 +114,18 @@
                         <div class="form-group">
                             <label for="example-text-input-alt">Password</label>
                             <input type="password" class="form-control is-valid" id="example-text-input-alt" name="password" placeholder="User password here ...">
+                        </div>
+                        <div class="form-group">
+                            <label for="example-text-input-alt">Confirm Password</label>
+                            <input type="password" class="form-control is-valid" id="example-text-input-alt" name="password_confirmation" placeholder="User password here ...">
+                        </div>
+                        <div class="form-group">
+                            <label>User Type</label>
+                            <select class="form-control is-valid" name="is_admin">
+                                <option value="">Select User Type</option>
+                                <option value="1">Admin</option>
+                                <option value="0">Customer</option>
+                            </select>
                         </div>
                     </div>
                     <div class="block-content block-content-full text-right border-top">

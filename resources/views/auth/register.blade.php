@@ -46,7 +46,7 @@
                                     <input type="password" name="password_confirmation" placeholder="Confirm Password" required="">
                                 </div>
                             </div>
-                            <input type="hidden" name="is_admin" value="0" >
+                            <input type="hidden" name="is_admin" value="0">
                             <div class="form-group">
                                 <button type="submit" class="theme-btn btn-style-one"><span class="btn-title">Sign Up</span></button>
                             </div>

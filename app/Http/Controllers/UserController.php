@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 
 //Models
@@ -14,7 +13,8 @@ class UserController extends Controller
 {
     public function userList()
     {
-        return view('admin.user.list');
+        $users = User::all();
+        return view('admin.user.list', compact('users'));
     }
 
     // Create New User
@@ -40,32 +40,33 @@ class UserController extends Controller
         }
     }
 
-    public function loginBk(Request $request) {
+    //create admin
+    public function registerNewAdmin(Request $request) {
        
-        $fields = $request->validate([
-            'email' => 'required|string',
-            'password' => 'required|string'
+        $formFields = $request->validate([
+            'name' => 'required|string',
+            'is_admin' => 'required|string',
+            'email' => 'required|string|unique:users,email',
+            'password' => 'required|confirmed|min:6'
         ]);
 
-        // Check email
-        $user = User::where('email', $request->email)->first();
-        // Check password
-        dd(bcrypt($fields['password']));
-        if(!$user || !Hash::check($request->password, $user->password)) {
-            return redirect('/signIn');
+        // Hash Password
+        $formFields['password'] = bcrypt($formFields['password']);
+
+        // Create User
+        $success = User::create($formFields);
+
+        if($success){
+            return $this->userList();
         }else{
-            if($user->is_admin == 1){
-                return redirect('/home');
-            }else{
-                return redirect('/rooms');
-            }
+            return $this->userList();
         }
     }
 
     public function loginUser(Request $request) {
        
         $credentials = $request->validate([
-            'email' => ['required', 'email'],
+            'email' => ['required', 'email'], 
             'password' => ['required'],
         ]);
 

@@ -38,6 +38,7 @@ Route::get('/contact', [WebsiteController::class, 'contact'])->name('contact');
 Route::get('/signIn', [WebsiteController::class, 'signIn'])->name('signIn');
 Route::get('/signUp', [WebsiteController::class, 'signUp'])->name('signUp');
 Route::post('/registerNewUser', [UserController::class, 'registerNewUser'])->name('registerNewUser');
+Route::post('/registerNewAdmin', [UserController::class, 'registerNewAdmin'])->name('registerNewAdmin');
 Route::post('/loginUser', [UserController::class, 'loginUser'])->name('loginUser');
 
 

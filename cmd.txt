@@ -5,6 +5,8 @@ php artisan migrate
 php artisan make:model Room -m
 php artisan make:controller RoomController
 
+php artisan db:seed
+
 
 
 C create  - POST
