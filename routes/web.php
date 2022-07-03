@@ -33,6 +33,12 @@ Route::get('/roomDetails/{id}', [RoomController::class, 'roomDetails'])->name('r
 Route::get('/checkout/{id}', [BookingController::class, 'checkout'])->name('checkout');
 Route::post('/confirmbooking', [BookingController::class, 'confirmbooking'])->name('confirmbooking');
 Route::get('/showBookings', [BookingController::class, 'showBookings'])->name('showBookings');
+
+//admin panel
+Route::get('/bookingList', [BookingController::class, 'bookingList'])->name('bookingList');
+Route::put('/updateBookingStatus/{id}', [BookingController::class, 'updateBookingStatus'])->name('updateBookingStatus');
+
+
 Route::get('/about', [WebsiteController::class, 'about'])->name('about');
 Route::get('/contact', [WebsiteController::class, 'contact'])->name('contact');
 Route::get('/signIn', [WebsiteController::class, 'signIn'])->name('signIn');
