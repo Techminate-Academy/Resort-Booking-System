@@ -39,8 +39,8 @@
                                         </div>
                                         <ul class="info">
                                             <li class="address">Uttara, Dhaka, Bangladesh</li>
-                                            <li class="phone"><a href="tel:+2(305)587-3407">01770184332</a></li>
-                                            <li class="email"><a href="mailto:info@hotera.com">info@Resort.com</a></li>
+                                            <li class="phone"><a href="phn: 01770184332">01770184332</a></li>
+                                            <li class="email"><a href="mailto:info@resort.com">info@resort.com</a></li>
                                             <li class="social-links">
                                                 <a href="#"><span class="fab fa-facebook-f"></span></a>
                                                 <a href="#"><span class="fab fa-twitter"></span></a>

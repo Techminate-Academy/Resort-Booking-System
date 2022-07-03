@@ -3,7 +3,7 @@
 @section('content')
  <!-- Banner Section -->
  <section class="page-banner ext-banner">
-        <div class="image-layer" style="background-image:url(images/background/banner-image-9.jpg);"></div>
+        <div class="image-layer" style="background-image:url({{ URL::asset('website/image/6.jpg') }})"></div>
         <div class="banner-bottom-pattern"></div>
 
         <div class="banner-inner">
@@ -53,13 +53,13 @@
                     <h3>Room Amenities</h3>
                     <div class="text">{{ $room->description }}</div>
                     <ul class="info clearfix">
-                        <li><span class="icon flaticon-tv"></span> Telivision</li>
+                        <li><span class="icon flaticon-tv"></span> Television</li>
                         <li><span class="icon flaticon-wifi"></span> Wi-Fi</li>
                         <li><span class="icon flaticon-coffee-cup"></span> Breakfast</li>
                         <li><span class="icon flaticon-bathtub"></span> Bathtub</li>
                         <li><span class="icon flaticon-stones"></span> Spa</li>
                         <li><span class="icon flaticon-newspaper"></span> Newspaper</li>
-                        <li><span class="icon flaticon-wine-glass"></span> Mini Bar</li>
+                        <li><span class="icon flaticon-wine-glass"></span> Mini Club</li>
                         <li><span class="icon flaticon-dumbbell"></span> Gymnasium</li>
                     </ul>
                 </div>
