@@ -3,10 +3,10 @@
     <div class="content py-3">
         <div class="row font-size-sm">
             <div class="col-sm-6 order-sm-2 py-1 text-center text-sm-right">
-                Developed <i class="fa fa-heart text-danger"></i> by <a class="font-w600" href="#" target="_blank">Sazid Ahmed</a>
+                Developed <i class="fa fa-heart text-danger"></i> by <a class="font-w600" href="#" target="_blank">Lutfa Khandakar</a>
             </div>
             <div class="col-sm-6 order-sm-1 py-1 text-center text-sm-left">
-                <a class="font-w600" href="#" target="_blank">Pharmatech</a> &copy; <span data-toggle="year-copy"></span>
+                <a class="font-w600" href="#" target="_blank">Resort</a> &copy; <span data-toggle="year-copy"></span>
             </div>
         </div>
     </div>

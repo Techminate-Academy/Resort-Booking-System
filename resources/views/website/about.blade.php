@@ -3,7 +3,7 @@
 @section('content')
  <!-- Banner Section -->
  <section class="page-banner">
-        <div class="image-layer" style="background-image:url(images/background/banner-image-1.jpg);"></div>
+        <div class="image-layer" style="background-image:url({{ URL::asset('website/image/6.jpg') }})"></div>
         <div class="banner-bottom-pattern"></div>
 
         <div class="banner-inner">
@@ -35,7 +35,7 @@
                 <div class="text-column col-lg-6 col-md-12 col-sm-12">
                     <div class="inner">
                         <div class="sec-title">
-                            <h2>Relax in <br>Our Luxury Hotel</h2>
+                            <h2>Relax in <br>Our Luxury Resort</h2>
                         </div>
                         <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                         <ul class="features">

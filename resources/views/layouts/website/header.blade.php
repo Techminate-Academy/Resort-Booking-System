@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Index | Resort Booking System</title>
+<title>Website | Resort Booking System</title>
 <!-- <link href="{{ asset('file path') }}" rel="stylesheet"> -->
 <!-- Stylesheets -->
 <link href="{{ asset('website/css/bootstrap.css') }}" rel="stylesheet">

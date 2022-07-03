@@ -27,7 +27,7 @@
       <div class="block block-rounded">
           <div class="block-content text-center">
               <p>
-                  A fixed, dark themed Header.
+                  Welcome to Admin Panel
               </p>
           </div>
       </div>

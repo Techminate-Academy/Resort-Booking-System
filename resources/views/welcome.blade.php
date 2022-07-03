@@ -67,7 +67,7 @@
         <!--Text Column-->
         <div class="text-column col-lg-6 col-md-12 col-sm-12">
           <div class="inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-            <h3>Discover a New <br>Look of Luxury Hotel.</h3>
+            <h3>Discover a New <br>Look of our resort.</h3>
             <div class="text">Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid dolore magna aliqu enim ad minim veniam quis nostrud exer cittion ullamco laboris nisi ut aliquip excepteur.</div>
             <div class="link-box">
               <a href="about.html" class="theme-btn btn-style-one"><span class="btn-title">Read More</span></a>
@@ -78,7 +78,7 @@
         <div class="image-column col-lg-6 col-md-12 col-sm-12">
           <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
             <div class="image-box">
-              <figure class="image"><a href="#"><img src="{{ URL::asset('website/image/6.jpg') }}" alt="" title=""></a></figure>
+              <figure class="image"><a href="#"><img src="{{ URL::asset('website/image/1.jpg') }}" alt="" title=""></a></figure>
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@
         <!--Text Column-->
         <div class="text-column col-lg-6 col-md-12 col-sm-12">
           <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-            <h3>Finest Beatch Resort <br>in Santorini.</h3>
+            <h3>Finest Beach Resort <br>in Bangladesh.</h3>
             <div class="text">Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid dolore magna aliqu enim ad minim veniam quis nostrud exer cittion ullamco laboris nisi ut aliquip excepteur.</div>
             <div class="link-box">
               <a href="about.html" class="theme-btn btn-style-one"><span class="btn-title">Discover Now</span></a>
@@ -100,7 +100,7 @@
         <div class="image-column col-lg-6 col-md-12 col-sm-12">
           <div class="inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
             <div class="image-box">
-              <figure class="image"><a href="#"><img src="{{ URL::asset('website/image/6.jpg') }}" alt="" title=""></a></figure>
+              <figure class="image"><a href="#"><img src="{{ URL::asset('website/image/4.jpg') }}" alt="" title=""></a></figure>
             </div>
           </div>
         </div>
