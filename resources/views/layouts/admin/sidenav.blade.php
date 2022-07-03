@@ -51,7 +51,7 @@
                           </a>
                         </li>
                         <li class="nav-main-item">
-                          <a class="nav-main-link" href="#">
+                          <a class="nav-main-link" href="{{ route('bookingList') }}">
                               <span class="nav-main-link-name">Booking list</span>
                           </a>
                         </li>

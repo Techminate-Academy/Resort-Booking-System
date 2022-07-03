@@ -36,7 +36,7 @@ Route::get('/showBookings', [BookingController::class, 'showBookings'])->name('s
 
 //admin panel
 Route::get('/bookingList', [BookingController::class, 'bookingList'])->name('bookingList');
-Route::put('/updateBookingStatus/{id}', [BookingController::class, 'updateBookingStatus'])->name('updateBookingStatus');
+Route::post('/updateBookingStatus', [BookingController::class, 'updateBookingStatus'])->name('updateBookingStatus');
 
 
 Route::get('/about', [WebsiteController::class, 'about'])->name('about');

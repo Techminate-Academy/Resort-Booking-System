@@ -51,4 +51,22 @@ class BookingController extends Controller
         }
 
     }
+
+    //admin panel
+    public function bookingList(){
+        $bookingList = Booking::all();
+        return view('admin.booking.bookingList', compact('bookingList'));
+    }
+
+    public function updateBookingStatus(Request $request){
+       
+        $booking = Booking::find($request->booking_id);
+        if ($booking) {
+            $booking->status = $request->status;
+            $booking->save();
+            return $this->bookingList();
+        } else {
+            return $this->bookingList();
+        }
+    }
 }

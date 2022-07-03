@@ -21,7 +21,6 @@
                                 </div>
                             </div>
 
-                            <div class="text">Bed Type : {{ $room->bed_type }}</div>
                             <div class="link-box">
                                 <a href="{{ route('roomDetails',[$room->id]) }}" class="theme-btn btn-style-three"><span class="btn-title">View Details</span></a>
                             </div>
